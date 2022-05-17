@@ -33,8 +33,8 @@ public class CensusAnalyzer {
         csvCsvToBeanBuilder.withIgnoreLeadingWhiteSpace(true);
         CsvToBean<E> csvToBean = csvCsvToBeanBuilder.build();
         return csvToBean.iterator();
-    }
-
+     }
+ 
     //generic method for count entries
     private <E> int getCount(Iterator<E> censusCSVIterator) {
         Iterable<E> csvIterator = () -> censusCSVIterator;
